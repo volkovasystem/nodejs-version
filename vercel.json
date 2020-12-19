@@ -1,0 +1,18 @@
+{
+	"routes": [
+		{
+			"src": "/",
+			"dest": "/nodejs-version.sh",
+			"methods": [
+				"GET"
+			],
+			"headers": {
+				"content-type": "application/x-sh"
+			}
+		},
+		{
+			"src": "/(.*)",
+			"status": 404
+		}
+	]
+}
